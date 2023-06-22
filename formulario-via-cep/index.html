@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.0.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/viacep.js"></script>
+    <script src="js/mascara.js"></script>
+    <script src="js/validação.js"></script>
+
+    <title>#</title>
+</head>
+<body>
+    <div id="box">
+        
+        <div class="filho">
+
+            <h3>Cadrastro</h3>
+
+            <label>Nome</label>
+            <input type="text" id="i_nome" required>
+
+            <label>sobrenome</label>
+            <input type="text" id="i_sobrenome" required>
+
+            <label>E-mail</label>
+            <input type="email" id="i_email" required>
+
+
+
+            <label>CEP</label>
+            <input type="text" id="i_cep" onblur="pesquisa_cep(this.value)" required>
+        
+            <label>Rua</label>
+            <input type="text" id="i_rua" >
+        
+            <label>Bairro</label>
+            <input type="text" id="i_bairro">
+        
+            <label>Cidade</label>
+            <input type="text" id="i_cidade">
+        
+            <label>Estado</label>
+            <input type="text" id="i_estado">
+        
+            <input type="submit" id="btt" onclick="validacao()" value="cadrastrar">
+
+            
+        </div>
+
+
+    </div>
+</body>
+</html>
